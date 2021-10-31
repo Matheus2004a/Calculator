@@ -35,6 +35,9 @@ input{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: #e7e7e7;
+    color: #cc3434;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
 }
 
 button{

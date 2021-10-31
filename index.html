@@ -17,27 +17,27 @@
         </div>
 
         <section class="grid template-areas">
-            <input type="text" class="display-numbers" disabled>
+            <input type="text" class="displayNumbers" disabled>
 
             <button class="item clear buttons-operations">AC</button>
             <button class="item fraction buttons-operations">+/-</button>
             <button class="item percentage buttons-operations">%</button>
-            <button class="item divison buttons-operations-right">/</button>
-            <button class="item seven">7</button>
-            <button class="item eight">8</button>
-            <button class="item nine">9</button>
-            <button class="item multiplication buttons-operations-right">x</button>
-            <button class="item four">4</button>
-            <button class="item five">5</button>
-            <button class="item six">6</button>
-            <button class="item minus buttons-operations-right">-</button>
-            <button class="item one">1</button>
-            <button class="item two">2</button>
-            <button class="item three">3</button>
-            <button class="item more buttons-operations-right">+</button>
-            <button class="item zero">0</button>
-            <button class="item point">.</button>
-            <button class="item equal buttons-operations-right">=</button>
+            <button onclick="insertValues('/')" class="item division buttons-operations-right">÷</button>
+            <button onclick="insertValues('7')" class="item seven">7</button>
+            <button onclick="insertValues('8')" class="item eight">8</button>
+            <button onclick="insertValues('9')" class="item nine">9</button>
+            <button onclick="insertValues('*')" class="item multiplication buttons-operations-right">x</button>
+            <button onclick="insertValues('4')" class="item four">4</button>
+            <button onclick="insertValues('5')" class="item five">5</button>
+            <button onclick="insertValues('6')" class="item six">6</button>
+            <button onclick="insertValues('-')" class="item minus buttons-operations-right">-</button>
+            <button onclick="insertValues('1')" class="item one">1</button>
+            <button onclick="insertValues('2')" class="item two">2</button>
+            <button onclick="insertValues('3')" class="item three">3</button>
+            <button onclick="insertValues('+')" class="item more buttons-operations-right">+</button>
+            <button onclick="insertValues('0')" class="item zero">0</button>
+            <button onclick="insertValues('.')" class="item point">.</button>
+            <button onclick="calculteValues()" class="item equal buttons-operations-right">=</button>
         </section>
     </main>
 
