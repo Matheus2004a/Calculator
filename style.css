@@ -27,6 +27,8 @@ main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    background-color: #9b9b9b;
+    border-radius: 5px;
 }
 
 input{
