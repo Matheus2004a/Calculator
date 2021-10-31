@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.icons i{
+    margin: 0 5px;
+}
+
+.icons i:hover{
+    cursor: pointer;
+}
+
+.grid{
+    display: grid;
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    background-color: #e2e2e2;
+}
+
+.buttons-operations{
+    color: #36c9c9;
+}
+
+.buttons-operations-right{
+    color: #cc3434;
+}
+
+.clear{
+    grid-area: clear;
+}
+
+.fraction{
+    grid-area: clear;
+}
