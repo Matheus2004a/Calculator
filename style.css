@@ -25,12 +25,23 @@ main{
 
 .grid{
     display: grid;
+    grid-template-areas: 
+    "display-numbers display-numbers display-numbers display-numbers"
+    "clear fraction percentage divison"
+    "seven eight nine multiplication"
+    "four five six minus"
+    "one two three more"
+    "zero zero point equal";
 }
 
 button{
     cursor: pointer;
     outline: none;
     background-color: #e2e2e2;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .buttons-operations{
@@ -41,10 +52,85 @@ button{
     color: #cc3434;
 }
 
+.display-numbers{
+    grid-area: display-numbers;
+}
+
 .clear{
     grid-area: clear;
 }
 
 .fraction{
-    grid-area: clear;
+    grid-area: fraction;
 }
+
+.percentage{
+    grid-area: percentage;
+}
+
+.divison{
+    grid-area: divison;
+}
+
+.seven{
+    grid-area: seven;
+}
+
+.eight{
+    grid-area: eight;
+}
+
+.nine{
+    grid-area: nine;
+}
+
+.multiplication{
+    grid-area: multiplication;
+}
+
+.four{
+    grid-area: four;
+}
+
+.five{
+    grid-area: five;
+}
+
+.six{
+    grid-area: six;
+}
+
+.minus{
+    grid-area: minus;
+}
+
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+.three{
+    grid-area: three;
+}
+
+.more{
+    grid-area: more;
+}
+
+.zero{
+    grid-area: zero;
+}
+
+.point{
+    grid-area: point;
+}
+
+.equal{
+    grid-area: equal;
+}
+
+
+
