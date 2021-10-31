@@ -3,13 +3,14 @@ function insertValues(num) {
     document.querySelector("input").value = inputNumbers + num
 }
 
-function calculteValues() {
+function calculateValues() {
     const inputNumbers = document.querySelector("input").value
     document.querySelector("input").value = eval(inputNumbers)
 }
 
 const btnInvertValue = document.querySelectorAll("button")[1]
 btnInvertValue.addEventListener("click", () => {
+    calculateValues()
     const inputNumbers = document.querySelector("input").value
     document.querySelector("input").value = inputNumbers * -1
 })
