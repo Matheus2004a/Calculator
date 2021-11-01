@@ -10,12 +10,16 @@
     /* Dark Mode */
     --color: #fff;
     --background-calculator: #0c0c0c;
-    --background-items-calculador: #4d4d4d;
+    --background-items-calculador: #5a5a5a;
     /* Light Mode */
     --background-buttons-and-icons: #e7e7e7;
     --background-calculator-and-buttons: #9b9b9b;
     --background-buttons-active: #e7e7e7;
     --background-input-numbers: #e7e7e7;
+}
+
+body{
+    background-color: #d1d1d1;
 }
 
 main{
