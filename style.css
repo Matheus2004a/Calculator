@@ -4,15 +4,32 @@
     box-sizing: border-box;
 }
 
+:root{
+    --buttons-operations: #36c9c9; 
+    --buttons-operations-right: #cc3434;
+    /* Dark Mode */
+    --color: #fff;
+    --background-calculator: #0c0c0c;
+    --background-items-calculador: #2a2828;
+    /* Light Mode */
+    --background-buttons-and-icons: #e7e7e7;
+    --background-calculator-and-buttons: #9b9b9b;
+    --background-buttons-active: #e7e7e7;
+    --background-input-numbers: #e7e7e7;
+}
+
 main{
     display: grid;
     justify-content: center;
 }
 
 .icons{
+    width: fit-content;
     display: flex;
-    justify-content: center;
-    margin: 2rem 0;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: var(--background-buttons-and-icons);
 }
 
 .icons i{
@@ -23,12 +40,26 @@ main{
     cursor: pointer;
 }
 
-.grid{
+.icon-dark-mode,.icon-light-mode.active{
+    opacity: 0.6;
+}
+
+.icon-dark-mode.active{
+    font-weight: bold;
+    opacity: 1;
+}
+
+section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    background-color: #9b9b9b;
-    border-radius: 5px;
+    background-color: var(--background-calculator-and-buttons);
+    border-radius: 7px;
+}
+
+section.darkMode{
+    background-color: var(--background-calculator);
+    transition: 0.5s ease-in-out;
 }
 
 input{
@@ -36,8 +67,8 @@ input{
     border: none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color: #e7e7e7;
-    color: #cc3434;
+    background-color: var(--background-input-numbers);
+    color: var(--buttons-operations-right);
     padding-left: 0.5rem;
     font-size: 1.2rem;
 }
@@ -45,7 +76,7 @@ input{
 button{
     cursor: pointer;
     outline: none;
-    background-color: #e2e2e2;
+    background-color: var(--background-buttons-and-icons);
     padding: 1rem;
     border: none;
     border-radius: 5px;
@@ -58,19 +89,24 @@ button:hover{
 }
 
 button:active{
-    background-color: #d3d3d3;
-    color: #9b9b9b;
+    background-color: var(--background-buttons-active);
+    color: var(--background-calculator-and-buttons);
+}
+
+input.darkMode,.icons.darkMode,button.darkMode{
+    color: var(--color);
+    background-color: var(--background-items-calculador);
+    transition: 0.5s ease-in-out;
 }
 
 .buttons-operations{
-    color: #36c9c9;
+    color: var(--buttons-operations) !important;
 }
 
 .buttons-operations-right{
-    color: #cc3434;
+    color: var(--buttons-operations-right) !important;
 }
 
 .zero{
     grid-column: 1 / 3;
 }
-
