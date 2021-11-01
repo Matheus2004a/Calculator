@@ -8,5 +8,9 @@ Simple project of a calculator to trainer habilites in JavaScript. For this proj
 
 **Observation:** Probably have some small errors on moment of realize count that has percentage depending on of the numbers involved, but i'm already checking the problem. Them way, it's still possible do some counts depending of the typed numbers.
 
+<<<<<<< HEAD
 > For check the project just to click in link next:
+=======
+> For check the project just to click in link below:
+>>>>>>> 540f8f600cdd2324bf6ee8de1d9c22a708efb1c3
 https://matheus2004a.github.io/Calculator/
